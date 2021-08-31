@@ -46,7 +46,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(helmet());
 
 // serve static files from template
-app.use('/static', express.static(path.join(__dirname + '/static/')));
+app.use('/public', express.static(path.join(__dirname + '/public/')));
 
 // include routes
 app.use(require('./routes'));
